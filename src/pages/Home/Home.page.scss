@@ -1,3 +1,14 @@
 .home-page {
   position: relative;
+  padding-top: 30vh;
+
+  @include media-breakpoint-down(xl) {
+    display: grid;
+    place-items: center;
+    padding: 0;
+  }
+
+  .app-tool-list {
+    position: relative;
+  }
 }

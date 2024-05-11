@@ -1,0 +1,53 @@
+.tts-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--spacer) / 2) calc(var(--spacer) * 2);
+  padding-block-end: 0;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-01);
+  margin-inline-start: var(--spacer);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-hover-01);
+    }
+  }
+
+  @keyframes border-pulsate {
+    0% {
+      border-color: rgb(255, 115, 0);
+    }
+
+    50% {
+      border-color: rgba(220, 129, 32, 0.8);
+    }
+
+    100% {
+      border-color: rgb(255, 136, 0);
+    }
+  }
+
+  &.isSpeaking {
+    border: 1px solid var(--color-warning-01);
+    animation: border-pulsate 0.6s infinite;
+  }
+
+  &.disabled {
+    opacity: 1;
+  }
+
+  &__icon {
+    margin: 0;
+    color: var(--color-icon-01);
+    margin-inline-end: var(--spacer);
+    padding-block-end: calc(var(--spacer) / 2);
+  }
+
+  &__title {
+    color: var(--color-text-03);
+    font-size: var(--font-size-sm);
+  }
+}

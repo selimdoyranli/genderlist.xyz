@@ -1,26 +1,43 @@
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #444;
+}
+
 ::selection {
   color: #fff;
   background: #444;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 html {
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
+  font-size: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: clip;
-  font-weight: var(--font-weight-regular);
-  font-family: var(--font-family-system);
+  color: var(--color-text-02);
+  font-family: var(--font-family-rubik);
   background-color: var(--color-ui-01);
+}
+
+p {
+  color: var(--color-text-02);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
+}
+
+button {
+  &:active {
+    transform: scale(0.96);
+    transform-origin: center;
+  }
 }

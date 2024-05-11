@@ -1,0 +1,9 @@
+@use '@/assets/style/scss/tokens/spacer/maps' as spacer;
+
+// https://getbootstrap.com/docs/5.0/utilities/spacing/#maps
+
+$spacer: 4px;
+
+$spacers: map-merge(spacer.$spacers, $spacers);
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);

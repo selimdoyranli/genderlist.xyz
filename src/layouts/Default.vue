@@ -9,7 +9,6 @@
   // Layout Main
   .layout__inner
     .router-view
-      pre Default Layout
       slot
 </template>
 

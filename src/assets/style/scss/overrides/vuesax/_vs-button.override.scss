@@ -1,0 +1,13 @@
+.vs-button {
+  &[style*='var(--vs-dark)'] {
+    color: var(--color-text-01);
+
+    &:hover {
+      background-color: var(--color-hover-01);
+    }
+  }
+
+  &[style*='var(--vs-secondary)'] {
+    color: var(--color-text-02);
+  }
+}

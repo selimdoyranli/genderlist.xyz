@@ -1,0 +1,28 @@
+.app-credits-dialog {
+  &__header {
+    position: relative;
+  }
+
+  &__content {
+    padding: calc(var(--spacer) * 8);
+    color: var(--color-text-02);
+    font-size: var(--font-size-md);
+    text-align: center;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-block-end: calc(var(--spacer) * 4);
+
+    a {
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

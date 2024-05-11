@@ -1,8 +1,10 @@
 <template lang="pug">
 .app-preloader(v-if="preloaderStore.preloader.isVisible")
   .app-preloader__inner
-    AppLogo
-    span.app-preloader__title Loading...
+    AppLogo.app-preloader__logo
+    p.app-preloader__message {{ $t('general.loading') }} ...
+
+  .app-preloader__bar
 </template>
 
 <script lang="ts" setup>
@@ -11,7 +13,9 @@ const preloaderStore = usePreloaderStore()
 onMounted(async () => {
   await nextTick()
 
-  preloaderStore.preloader.hide()
+  setTimeout(() => {
+    preloaderStore.preloader.hide()
+  }, 2000)
 })
 </script>
 

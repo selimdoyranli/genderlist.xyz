@@ -1,10 +1,52 @@
 .app-header {
-  position: var(--header-position);
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: var(--z-index-header);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: var(--header-height);
-  padding: 16px;
-  background-color: var(--color-ui-02);
+  padding: 0 calc(#{$spacer} * 4);
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+
+  &--reveal {
+    backdrop-filter: blur(8px);
+  }
+
+  &__actions {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-block-start: var(--spacer);
+  }
+
+  .language-dropdown-menu {
+    $v-dropdown-menu: '.v-dropdown-menu';
+
+    #{$v-dropdown-menu} {
+      &__container {
+        top: var(--header-height);
+        background-color: var(--color-ui-03);
+        border: 1px solid var(--color-border-01);
+        border-radius: var(--border-radius-01);
+      }
+
+      &__trigger {
+        height: auto;
+      }
+    }
+
+    &-item {
+      padding: calc(#{$spacer} * 3) calc(#{$spacer} * 4);
+      list-style: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-hover-01);
+      }
+    }
+  }
 }

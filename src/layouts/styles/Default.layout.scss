@@ -5,9 +5,7 @@
 
   #{$layout} {
     &__inner {
-      display: grid;
-      text-align: center;
-      place-items: center;
+      position: relative;
     }
   }
 }

@@ -1,4 +1,48 @@
 .page {
   position: relative;
   width: 100%;
+  min-height: 100vh;
+  padding-block-start: calc(var(--header-height) + var(--spacer) * 16);
+  padding-block-end: 20vh;
+
+  @include media-breakpoint-down(lg) {
+    padding-block-start: calc(var(--header-height) + var(--spacer) * 6);
+  }
+
+  &-head {
+    position: relative;
+    margin-block-end: calc(var(--spacer) * 20);
+
+    @include media-breakpoint-down(sm) {
+      margin-block-end: calc(var(--spacer) * 10);
+    }
+
+    &__icon {
+      position: relative;
+      margin-block-end: calc(var(--spacer) * 4);
+    }
+
+    &__title {
+      color: var(--color-text-01);
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-5xl);
+      line-height: 120%;
+
+      @include media-breakpoint-down(md) {
+        font-size: var(--font-size-4xl);
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: var(--font-size-2xl);
+      }
+    }
+
+    &__description {
+      margin-block-start: calc(var(--spacer) * 4);
+
+      @include media-breakpoint-down(sm) {
+        font-size: var(--font-size-md);
+      }
+    }
+  }
 }
