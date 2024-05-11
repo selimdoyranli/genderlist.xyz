@@ -1,15 +1,28 @@
 <br>
 
+<br>
 <p align="center">
-<b>nuxt3-boilerplate</b>
+<a href="https://genderlist.xyz" target="_blank">
+<img src="/src/public/meta/icon/android-icon-72x72.png" alt="genderlist.xyz" />
+</a>
 </p>
 
 <p align="center">
-💚 Stable, compatible, powerful, clear, production ready 📦👌
+<b>genderlist.xyz</b>
 </p>
 
 <p align="center">
-<a href="https://github.com/selimdoyranli/nuxt3-boilerplate" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/selimdoyranli/nuxt3-boilerplate?style=social"></a>
+All gender identities in the world 🌈🤔
+</p>
+
+<br>
+
+<p align="center">
+<a href="https://github.com/selimdoyranli/genderlist.xyz" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/selimdoyranli/genderlist.xyz?style=social"></a>
+</p>
+
+<p align="center">
+  <a href="https://genderlist.xyz" target="_blank">Website</a>
 </p>
 
 <div align="center">
@@ -29,7 +42,7 @@ Install [Node.js >=18.0.0](https://nodejs.org/) and run the following command:
 Git clone.
 
 ```bash
-$ git clone https://github.com/selimdoyranli/nuxt3-boilerplate.git
+$ git clone https://github.com/selimdoyranli/genderlist.xyz.git
 ```
 
 &nbsp;
@@ -37,7 +50,7 @@ $ git clone https://github.com/selimdoyranli/nuxt3-boilerplate.git
 #### Build Setup
 
 ```bash
-$ cd nuxt3-boilerplate
+$ cd genderlist.xyz
 
 # install dependencies
 $ yarn install
@@ -98,8 +111,10 @@ $ git push
 ## Tech Stack
 
 - [Nuxt](https://nuxt.com) - Nuxt3 vue framework
+- [Vuesax](https://vuesax.com) - UI library
 - Pug
 - Scss
+- Bootstrap5 scss utils
 - Typescript
 - [Pinia](https://pinia.vuejs.org) - State management
 - Husky
@@ -124,4 +139,4 @@ You can sponsor me for the continuity of my projects:
 
 ## License
 
-MIT License © 2023 [selimdoyranli](https://github.com/selimdoyranli)
+MIT License © 2024 [selimdoyranli](https://github.com/selimdoyranli)
