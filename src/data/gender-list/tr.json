@@ -144,11 +144,11 @@
     "description": "Yarı kız, kendisini kısmen kadın olarak tanımlayan kişidir. Ne tam olarak erkek ne de tam olarak kadın olduklarını ya da her iki cinsiyetin karışımı olduklarını hissedebilirler. Yarı kızlar vücutlarını cinsiyet kimliklerine uyacak şekilde değiştirmek için hormon tedavisine veya ameliyata girebilir veya girmeyebilir."
   },
   {
-    "title": "yarı adam",
+    "title": "Yarı adam (demi-guy)",
     "description": ""
   },
   {
-    "title": "yarı adam",
+    "title": "Yarı adam (demi-man)",
     "description": ""
   },
   {
@@ -184,11 +184,11 @@
     "description": "Kadından erkeğe trans kişiler için cinsiyet onaylama ameliyatı, trans erkeğin erkek kimliğine ve işleyişine daha uygun fiziksel özellikler sağlamak için anatomik özellikleri değiştiren çeşitli cerrahi prosedürleri içerir. Genellikle falloplasti, metidoplasti veya vajinektomiyi ifade etmek için kullanılan cinsiyet değiştirme ameliyatı, aynı zamanda daha geniş anlamda, erkekte göğüs rekonstrüksiyonu, histerektomi veya ooferektomi gibi bir bireyin sahip olabileceği birçok prosedüre de atıfta bulunabilir. Cinsiyet belirleme ameliyatından önce genellikle testosteron ile hormon tedavisine başlanır."
   },
   {
-    "title": "Kadın",
+    "title": "Femme",
     "description": "Femme, kendisini kadın olarak tanımlayan ve/veya kendini kadınsı bir şekilde ifade eden kişiyi tanımlamak için kullanılan bir terimdir. Femme isim, sıfat veya fiil olarak kullanılabilir. LGBTQIA+ topluluğunda, tavrı geleneksel olarak kadınsı olan bir lezbiyeni tanımlamak için sıklıkla kullanılır."
   },
   {
-    "title": "Kadınsı",
+    "title": "Femminiello (İtalya)",
     "description": "Güney İtalya'da femminiello adı verilen bir tür erkek şaman benzeri figür vardır. Çoğu femminielli kendilerini farklı bir üçüncü cinsiyet olarak görse de, Femminielli'nin bazen çapraz giyinen, çift cinsiyetli ve hatta transseksüel olduğu düşünülür."
   },
   {
@@ -297,7 +297,7 @@
   },
   {
     "title": "Erkek",
-    "description": "Erkek terimi, doğuştan erkek olarak atanan ve bu kimliği kendileri için benimseyen cisgender insanları tanımlamak için kullanılan bir terimdir. Bir erkek geleneksel erkeklik rollerini benimseyebilir veya benimsemeyebilir. Günümüz toplumunda, geçmişin toksik erkeklik performanslarını reddedebilecek, erkekliği somutlaştırmanın geniş bir yelpazesi var."
+    "description": "Erkek, eril insan. Erkek terimi genellikle yetişkin bir eril bireyi kastetmekte kullanılırken, oğlan terimi ise eril bir çocuk veya ergeni tanımlamak için kullanılır. Ancak erkek terimi aynı zamanda bazen yaş gözetmeksizin bir eril insanı tanımlamak için de kullanılır; tıpkı 'erkek basketbolu' ifadesinde olduğu gibi. Erkeklik terimi, eril bir insanın yaşamındaki dönemi anlatmak için kullanılır. Bu dönemde birey çocukluktan çıkıp ergenlikten geçerek genellikle eril ikincil cinsel özelliklere ulaşır. Erkeklik terimi eril nitelikler ve eril cinsiyet rollerini ifade eden erillik ile ilişkilidir."
   },
   {
     "title": "Erkekten kadına",
@@ -305,7 +305,7 @@
   },
   {
     "title": "Adam",
-    "description": "Erkek, cinsiyet ikilisinin bir parçası olarak görülen bir cinsiyet kimliğidir. Adam, yetişkinler için kullanılan bir terimdir ve boy (çocuklar için), male (sıfat) ve çoğu zaman erkeklik terimlerine karşılık gelir."
+    "description": "Erkek, cinsiyet ikilisinin bir parçası olarak görülen bir cinsiyet kimliğidir. Adam, yetişkinler için kullanılan bir terimdir ve boy (çocuklar için), adam (sıfat) ve çoğu zaman erkeklik terimlerine karşılık gelir."
   },
   {
     "title": "Trans deneyimi olan adam",
