@@ -1,0 +1,21 @@
+@use '../tokens/font-family/maps' as font-family;
+@use '../tokens/font-size/maps' as font-size;
+@use '../tokens/font-weight/maps' as font-weight;
+
+@each $name, $value in font-family.$font-families {
+  .font-family-#{$name} {
+    font-family: var(--font-family-#{$name}) !important;
+  }
+}
+
+@each $name, $value in font-size.$sizes {
+  .font-size-#{$name} {
+    font-size: var(--font-size-#{$name}) !important;
+  }
+}
+
+@each $name, $value in font-weight.$weights {
+  .font-weight-#{$name} {
+    font-weight: var(--font-weight-#{$name}) !important;
+  }
+}

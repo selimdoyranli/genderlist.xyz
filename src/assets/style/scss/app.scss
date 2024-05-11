@@ -1,0 +1,35 @@
+// Tokens
+@import 'tokens/breakpoint/css-vars';
+@import 'tokens/spacer/css-vars';
+@import 'tokens/font-family/css-vars';
+@import 'tokens/font-size/css-vars';
+@import 'tokens/font-weight/css-vars';
+@import 'tokens/color/css-vars';
+@import 'tokens/box-shadow/css-vars';
+@import 'tokens/z-index/css-vars';
+@import 'tokens/header/css-vars';
+
+// Overrides
+// Overrides put here for actual styles
+// ->
+
+// Vendor
+// Vendor put here (e.g. animate.css, normalize.css)
+@import '../css/vendor/animate.min.css';
+
+// Base
+@import 'base/general';
+@import 'base/transition';
+
+// Utils
+@import 'utils/typography';
+@import 'utils/color';
+@import 'utils/box-shadow';
+@import 'utils/z-index';
+@import 'utils/state';
+
+// Shared
+// Shared styles for UI Blocks
+// Such as 'page', 'card', 'form' that contain common styles
+@import 'shared/page';
+@import 'shared/layout';
