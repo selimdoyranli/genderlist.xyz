@@ -13,11 +13,30 @@
 </template>
 
 <script lang="ts" setup>
-import genderList from '@/data/gender-list/en.json'
+import genderListEn from '@/data/gender-list/en.json'
+import genderListDe from '@/data/gender-list/de.json'
+import genderListNl from '@/data/gender-list/nl.json'
+import genderListTr from '@/data/gender-list/tr.json'
+
+const { locale } = useI18n()
+
+const activeLocale = computed(() => {
+  return locale.value
+})
+
+const activeList = computed(() => {
+  if (activeLocale.value === 'en') return genderListEn
+
+  if (activeLocale.value === 'de') return genderListDe
+
+  if (activeLocale.value === 'nl') return genderListNl
+
+  if (activeLocale.value === 'tr') return genderListTr
+})
 
 const route = useRoute()
 
-const gender = genderList.find(item => generateSlug(item.title) === route.query.id)
+const gender = activeList.value?.find(item => generateSlug(item.title) === route.query.id)
 </script>
 
 <style lang="scss" src="./Gender.page.scss"></style>

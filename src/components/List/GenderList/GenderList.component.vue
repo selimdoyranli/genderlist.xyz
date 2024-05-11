@@ -15,11 +15,30 @@
 
 <script lang="ts" setup>
 import type { ListItemTypes, ListTypes } from './GenderList.component.types'
-import genderList from '@/data/gender-list/en.json'
+import genderListEn from '@/data/gender-list/en.json'
+import genderListDe from '@/data/gender-list/de.json'
+import genderListNl from '@/data/gender-list/nl.json'
+import genderListTr from '@/data/gender-list/tr.json'
 
 const baseClassName = 'gender-list'
 
-const list: Ref<ListTypes> = ref([...genderList])
+const { locale } = useI18n()
+
+const activeLocale = computed(() => {
+  return locale.value
+})
+
+const activeList = computed(() => {
+  if (activeLocale.value === 'en') return genderListEn
+
+  if (activeLocale.value === 'de') return genderListDe
+
+  if (activeLocale.value === 'nl') return genderListNl
+
+  if (activeLocale.value === 'tr') return genderListTr
+})
+
+const list: Ref<ListTypes> = ref([...(activeList.value as ListTypes)])
 
 const groupedItems = computed(() => {
   const groups: Record<string, { letter: string; items: ListItemTypes[] }> = {}
@@ -33,7 +52,7 @@ const groupedItems = computed(() => {
     groups[letter].items.push(item)
   }
 
-  return Object.values(groups)
+  return Object.values(groups).sort((a, b) => a.letter.localeCompare(b.letter))
 })
 
 const makeGlowEffect = () => {
