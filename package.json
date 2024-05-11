@@ -1,23 +1,23 @@
 {
-  "name": "nuxt3-boilerplate",
+  "name": "genderlist.xyz",
   "version": "0.0.1",
-  "description": "💚 Stable, compatible, powerful, clear, production ready 📦👌",
+  "description": "All gender identities in the world 🌈🤔",
   "private": true,
   "keywords": [
-    "nuxt",
-    "nuxt3",
-    "nuxt boilerplate",
-    "nuxt3 boilerplate"
+    "genders",
+    "gender list",
+    "wiki",
+    "gender wiki"
   ],
   "author": "selimdoyranli",
   "contributors": [
     "Selim Doyranlı <selimdoyranli@gmail.com> (https://selimdoyranli.com)"
   ],
   "bugs": "selimdoyranli@gmail.com",
-  "homepage": "https://github.com/selimdoyranli/nuxt3-boilerplate",
+  "homepage": "https://github.com/selimdoyranli/genderlist.xyz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/selimdoyranli/nuxt3-boilerplate"
+    "url": "https://github.com/selimdoyranli/genderlist.xyz"
   },
   "license": "MIT",
   "engines": {
@@ -57,6 +57,7 @@
     "@nuxt/devtools": "^0.8.5",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/i18n": "^8.2.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@prettier/plugin-pug": "^2.4.1",
     "@typescript-eslint/parser": "^5.59.11",
@@ -71,7 +72,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "4.2.5",
     "lint-staged": "^13.1.0",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.11.0",
+    "nuxt-icon": "^0.6.9",
     "postcss": "^8.4.21",
     "postcss-html": "^1.5.0",
     "postcss-scss": "^4.0.6",
@@ -96,6 +98,9 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.6"
+    "bootstrap": "^5.3.3",
+    "pinia": "^2.1.6",
+    "v-dropdown-menu": "^2.0.4",
+    "vuesax-alpha": "^0.2.0-beta.73"
   }
 }

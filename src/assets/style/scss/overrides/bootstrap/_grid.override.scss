@@ -1,0 +1,16 @@
+// https://getbootstrap.com/docs/5.0/layout/grid/#variables
+
+@use '@/assets/style/scss/tokens/breakpoint/maps' as breakpoint;
+
+$grid-columns: 12;
+$grid-gutter-width: 32px;
+
+$grid-breakpoints: breakpoint.$breakpoints;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);

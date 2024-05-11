@@ -3,12 +3,23 @@
 
   position: relative;
 
-  &__inner {
-    position: relative;
-    z-index: 2;
+  &::after {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     width: 100%;
-    height: calc(100vh - var(--header-height) - 0rem);
-    padding-top: calc(var(--header-height) + 0rem);
+    height: 100vh;
+    background-image: url(/shadow-painting.webp);
+    background-repeat: no-repeat;
+    background-position: center -50vh;
+    opacity: 0.2;
+    filter: hue-rotate(320deg);
+    content: '';
+  }
+
+  &__inner {
+    z-index: 2;
   }
 
   .router-view {
