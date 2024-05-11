@@ -88,7 +88,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/meta/icon/favicon.ico' },
-        { rel: 'manifest', href: '/meta/manifest.json' }
+        { rel: 'manifest', href: 'https://genderlist.xyz/meta/manifest.json' }
       ]
     },
     layoutTransition: { name: 'layout', mode: 'out-in' },
