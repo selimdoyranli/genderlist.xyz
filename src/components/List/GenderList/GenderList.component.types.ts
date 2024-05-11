@@ -1,8 +1,6 @@
 export type ListItemTypes = {
-  id: string
-  icon: string
   title: string
-  slug: string
+  description: string
 }
 
 export type ListTypes = ListItemTypes[]

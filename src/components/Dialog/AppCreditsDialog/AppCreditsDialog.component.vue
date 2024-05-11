@@ -7,6 +7,18 @@ ClientOnly
 
     .app-credits-dialog__content
       p(v-html="$t('credits.description')")
+      br
+      small {{ $t('app.copyright', { atSign: '@' }) }}
+      br
+      br
+      small {{ $t('dialog.credits.resources.description', { atSign: '@' }) }}
+      br
+      br
+      span.d-block {{ $t('dialog.credits.resources.title') }}
+      small
+        | https://helpfulprofessor.com/types-of-genders-list
+        | https://gender.fandom.com/wiki/Gender_Wiki
+        | https://en.wikipedia.org/wiki/List_of_gender_identities
 
     template(#footer)
       .app-credits-dialog__footer

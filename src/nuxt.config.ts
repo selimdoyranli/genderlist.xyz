@@ -19,20 +19,77 @@ export default defineNuxtConfig({
    */
   app: {
     head: {
-      title: process.env.npm_package_name || '',
+      title: 'genderlist.xyz - All gender identities in the world 🌈🤔',
       meta: [
         { charset: 'utf-8' },
         {
           name: 'viewport',
-          content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+          content: 'width=device-width, initial-scale=1.0'
+        },
+        {
+          hid: 'robots',
+          name: 'robots',
+          content: 'index,follow'
         },
         {
           hid: 'description',
           name: 'description',
-          content: process.env.npm_package_description || ''
+          content: process.env.npm_package_description
+        },
+        {
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes'
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'genderlist.xyz - All gender identities in the world 🌈🤔'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: process.env.npm_package_description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://genderlist.xyz'
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: 'genderlist.xyz - All gender identities in the world 🌈🤔'
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content: process.env.npm_package_description
+        },
+        {
+          hid: 'twitter:url',
+          property: 'twitter:url',
+          content: 'https://genderlist.xyz'
+        },
+        {
+          hid: 'theme-color',
+          name: 'theme-color',
+          content: '#040404'
         }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/meta/icon/favicon.ico' },
+        { rel: 'manifest', href: '/meta/manifest.json' }
+      ]
     },
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: { name: 'page', mode: 'out-in' }
@@ -165,6 +222,20 @@ export default defineNuxtConfig({
             code: 'tr',
             iso: 'tr-TR',
             file: 'tr.ts'
+          },
+          {
+            name: 'German',
+            title: 'Deutsch',
+            code: 'de',
+            iso: 'de-DE',
+            file: 'de.ts'
+          },
+          {
+            name: 'Dutch',
+            title: 'Dutch',
+            code: 'nl',
+            iso: 'nl-NL',
+            file: 'nl.ts'
           }
         ],
         langDir: 'locales/',
@@ -183,7 +254,14 @@ export default defineNuxtConfig({
         pages: {
           'Home/index': {
             tr: '/',
-            en: '/'
+            en: '/',
+            de: '/'
+          },
+          'Gender/Gender.page': {
+            tr: '/cinsiyet',
+            en: '/gender',
+            de: '/geschlecht',
+            nl: '/geslacht'
           }
         }
       }

@@ -5,7 +5,7 @@
       h1.page-head__title {{ $t('app.slogan') }}
       p.page-head__description {{ $t('app.description') }}
 
-    span home
+    GenderList
 </template>
 
 <script lang="ts" setup>

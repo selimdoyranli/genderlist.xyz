@@ -4,19 +4,32 @@ export default {
     domain: 'genderlist.xyz',
     slogan: 'All gender identities in the world 🌈🤔',
     description: 'Provides a list of all gender identities in the world',
-    copyright: `genderlist.xyz <a href="https://selimdoyranli.com" title="selimdoyranli" target="_blank">{atSign}selimdoyranli</a> tarafından`,
+    copyright: `genderlist.xyz created by {atSign}selimdoyranli`,
     publisher: 'selimdoyranli'
   },
   error: {
-    error: 'Hata',
-    anErrorOccurred: 'Bir hata oluştu',
-    tryAgain: 'Tekrar dene'
+    error: 'Error',
+    anErrorOccurred: 'An error occurred',
+    tryAgain: 'Try again'
   },
   general: {
-    loading: 'Yükleniyor',
-    chooseLanguage: 'Dil seç'
+    loading: 'Loading',
+    chooseLanguage: 'Choose language',
+    goHome: 'Go home'
   },
   credits: {
     description: 'Provides a list of all gender identities in the world'
+  },
+  list: {
+    noDescription: 'No description provided'
+  },
+  dialog: {
+    credits: {
+      resources: {
+        title: 'Resources',
+        description:
+          'The information used on this site has been obtained from external sources and translated from English to other languages using Google Translate Client. For issues, information, and collaboration, you can email selimdoyranli{atSign}gmail.com.'
+      }
+    }
   }
 }

@@ -1,19 +1,36 @@
-.app-tool-list {
-  $app-tool-list-card: '.app-tool-list-card';
+.gender-list {
+  $gender-list-card: '.gender-list-card';
 
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: calc(var(--spacer) * 4);
-
-  @include media-breakpoint-down(xl) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: block;
 
   &:hover {
-    #{$app-tool-list-card} {
+    #{$gender-list-card} {
       &__border {
         opacity: 1;
+      }
+    }
+  }
+
+  &-group {
+    display: block;
+    margin-block-end: calc(var(--spacer) * 16);
+
+    &__title {
+      display: block;
+      color: var(--color-text-02);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-xl);
+      margin-block-end: calc(var(--spacer) * 4);
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: calc(var(--spacer) * 4);
+
+      @include media-breakpoint-down(xl) {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -35,24 +52,7 @@
     box-shadow: 2px 4px 0px 0px #001;
     opacity: 0.5;
     transition: 0.4s;
-    aspect-ratio: 16 / 9;
-
-    &--comingSoon {
-      opacity: 0.2;
-      pointer-events: none;
-    }
-
-    @include media-breakpoint-only(lg) {
-      aspect-ratio: 21/9;
-    }
-
-    @include media-breakpoint-down(md) {
-      aspect-ratio: 4/3;
-    }
-
-    @include media-breakpoint-down(sm) {
-      aspect-ratio: 4/3;
-    }
+    aspect-ratio: 21 / 9;
 
     &:hover {
       opacity: 0.6;
@@ -61,7 +61,7 @@
         opacity: 0.1;
       }
 
-      #{$app-tool-list-card} {
+      #{$gender-list-card} {
         &__seeButton {
           transform: translate(var(--spacer));
         }
@@ -131,7 +131,7 @@
       position: relative;
       color: var(--color-text-04);
       font-weight: var(--font-weight-medium);
-      font-size: var(--font-size-lg);
+      font-size: var(--font-size-xl);
 
       @include media-breakpoint-down(sm) {
         font-size: var(--font-size-sm);

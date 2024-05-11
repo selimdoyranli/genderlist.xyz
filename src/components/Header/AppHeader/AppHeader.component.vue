@@ -13,13 +13,17 @@ header.header.app-header(:class="[revealClass]")
         template(#body)
           li.language-dropdown-menu-item(dropdown-closer @click="$i18n.setLocale('en')")
             span.language-dropdown-menu-item__title English
+          li.language-dropdown-menu-item(dropdown-closer @click="$i18n.setLocale('de')")
+            span.language-dropdown-menu-item__title Deutsch
+          li.language-dropdown-menu-item(dropdown-closer @click="$i18n.setLocale('nl')")
+            span.language-dropdown-menu-item__title Dutch
           li.language-dropdown-menu-item(dropdown-closer @click="$i18n.setLocale('tr')")
             span.language-dropdown-menu-item__title Türkçe
 
     .app-header-action-item
       VsButton(color="secondary" size="small" active @click="isOpenCreditsDialog = true")
-        AppIcon(name="charm:github")
-        span.color-text-02.d-none.d-lg-inline-block.ms-0.ms-lg-1 Created by @selimdoyranli
+        AppIcon(name="charm:heart")
+        span.color-text-02.d-none.d-lg-inline-block.ms-0.ms-lg-1 Donate
 
   // App Credits Dialog
   AppCreditsDialog(:is-open="isOpenCreditsDialog" @on-close="isOpenCreditsDialog = false")
