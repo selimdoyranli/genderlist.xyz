@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v1.0.1
+
+[compare changes](https://github.com/selimdoyranli/genderlist.xyz/compare/v1.0.0...v1.0.1)
+
+### 📖 Documentation
+
+- Update wiki ([4af53af](https://github.com/selimdoyranli/genderlist.xyz/commit/4af53af))
+
+### ❤️ Contributors
+
+- Selimdoyranli ([@selimdoyranli](http://github.com/selimdoyranli))
+
 ## v1.0.0
 
 
